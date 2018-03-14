@@ -12,8 +12,8 @@
     background-position:center;
     width:100%;
     height:120vh;
-    border-bottom: solid black 5px;
-    color: #111111;
+    border-bottom: solid #050035 5px;
+    color: #050035;
 }
 
 #header h1{
@@ -46,8 +46,8 @@
 }
 
 #header li:hover {
-    background-color:#02599b;
-  }
+    background-color:#050035;
+}
 
 h2{
     padding-top:15px;
@@ -55,27 +55,75 @@ h2{
 }
 
 #section1{
-    height:120vh;
-    background: url(../img/section1.jpg);
-    background-size:100% 100%;
+    min-height:120vh;
+    background: #1994f8;
+    /* background: url(../img/section1.jpg); */
+    /* background-size:100% 100%; */
     /* background-size:cover; */
     /*background-color: #1994f8;*/
-    border-bottom: solid black 5px;
-    color:rgb(156, 218, 247);
+    border-bottom: solid #050035 5px;
+    color:#050035;
+}
+
+.imgs{
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:15px;
+}
+
+.imgs img{
+    margin:5px;
+}
+
+#gallery{
+    min-height:120vh;
+    color:#050035;
+    border-bottom: solid #050035 5px;
+    background:#1994f8;
+    background-size:cover;
+    text-align:center;
+    border-bottom: solid #050035 5px;
+}
+
+.slider{
+    background:url(../img/gallery2.jpg);
+    background-size:cover;
+    margin:50px;
+    min-width:90vw;
+    min-height:100vh;
+    display:flex;
+}
+
+.prev{
+    font-size:50px;
+    margin-top: 200px;
+    padding:10px;
+    margin-left:10px;
+}
+
+.next{
+    font-size:50px;
+    margin-top: 200px;
+    padding:10px;
+    margin-right:10px;
 }
 
 #section2{
     min-height:680px;
     background: url(../img/section2.jpg);
     background-size:cover;
-    border-bottom: solid black 5px;
-    color: #111111;
+    border-bottom: solid #050035 5px;
+    color: #050035;
 }
 
 #section2 p{
     margin:150px;
     font-size:20px;
-    color: #f4f819;
+    /* color: #f4f819; */
+    color: #050035;
     text-align: center;
 }
 
@@ -90,12 +138,12 @@ h2{
 #section3{
     min-height:96vh;
     background-color: #1994f8;
-    border-bottom: solid black 5px;
-    color: #111111;
+    border-bottom: solid #050035 5px;
+    color: #050035;
 }
 
 #section3 a{
-    color: #111111;
+    color: #050035;
 }
 
 #github{
@@ -120,7 +168,6 @@ label{
 
 #btn{
     width:100px;
-    color: #111111;
     font-size:20px;
     padding:10px;
     border: solid rgb(156, 218, 247) 1px;
@@ -135,7 +182,7 @@ label{
 }
 
 #btn:hover{
-    background-color:#02599b;
+    background-color:#050035;
 }
 
 footer{
@@ -143,6 +190,7 @@ footer{
     height:4vh;
     font-weight: bold;
     font-size:3vh;
+    color: #050035;
 }
 
 #top {
@@ -171,5 +219,5 @@ footer{
 }
   
 #top:hover {
-    background-color:#02599b;
+    background-color:#050035;
 }
