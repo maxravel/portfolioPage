@@ -1,3 +1,5 @@
+//Gallery
+
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 const slider=document.querySelector('.slider');
@@ -25,3 +27,20 @@ function prevPhoto(e){
     e.preventDefault();
 
 }
+
+
+
+// //About
+// const imgs = document.querySelectorAll('.imgs img');
+
+// imgs.forEach(d => d.addEventListener('click', clickImg));
+
+// function clickImg(e){
+//     imgs.forEach(x => (x.style.opacity=1));
+//     e.target.style.opacity=0.4;
+    
+//     //e.target.innerHTML = '<p class="textImg">Lorem ipsum </p>';
+//     // Voluptas ipsum, sed doloremque excepturi earum temporibus beatae 
+//     // asperiores assumenda harum illo laboriosam eos pariatur doloribus 
+//     // tempore ab cum architecto, numquam voluptatem.
+// }

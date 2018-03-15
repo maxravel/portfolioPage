@@ -52,9 +52,11 @@
 }
 
 h2{
-    padding-top:15px;
+    padding-top:25px;
     font-size:50px;
 }
+
+
 
 #section1{
     min-height:120vh;
@@ -76,11 +78,27 @@ h2{
     justify-content: center;
     align-items: center;
     margin-bottom:55px;
+    margin-top:30px;
 }
 
 .imgs img{
-    margin:5px;
+    margin:15px;
+    width:350px;
+    height:350px;
+    cursor:pointer;
 }
+
+img:hover{
+    opacity:0.4;
+    /* content: attr(title); */
+}
+
+.textImg{
+    font-size:20px;
+    z-index:1;
+    
+}
+
 
 #gallery{
     /* min-height:120vh; */
@@ -109,6 +127,7 @@ h2{
     height:50vw;
     /* margin:auto; */
     margin-bottom:55px;
+    margin-top:30px;
 }
 
 .prev{
@@ -129,6 +148,8 @@ h2{
     font-weight:bold;
     cursor:pointer;
 }
+
+
 
 #section2{
     min-height:680px;
@@ -175,6 +196,8 @@ h2{
     }
 }
 
+
+
 #section3{
     min-height:96vh;
     /* background-color: #1994f8; */
@@ -187,9 +210,9 @@ h2{
     color: #050035;
 }
 
-#github{
+/* #github{
     font-size:20px;
-}
+} */
 
 form{
     padding-top: 10px;
@@ -206,9 +229,17 @@ textarea{
     height:120px;
 }
 
-label{
+h3, #github, label{
     margin-top:10px;
     font-size:20px;
+    font-weight:bold;
+}
+
+h3{
+    font-size:23px;
+    width:300px;
+    margin:auto;
+    border:1px solid #050035;
 }
 
 #btn{
