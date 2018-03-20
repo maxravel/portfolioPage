@@ -36,11 +36,46 @@ const imgs = document.querySelectorAll('.imgs img');
 imgs.forEach(d => d.addEventListener('click', clickImg));
 
 function clickImg(e){
-    imgs.forEach(x => (x.style.opacity=1));
+    imgs.forEach(x => {
+        x.style.opacity=1; 
+        x.style.cursor = 'pointer'
+    });
     e.target.style.opacity=0.4;
+    e.target.style.cursor = 'default';
     //e.target.classList.toggle('opac');
     //e.target.innerHTML = '<p class="textImg">Lorem ipsum </p>';
     // Voluptas ipsum, sed doloremque excepturi earum temporibus beatae 
     // asperiores assumenda harum illo laboriosam eos pariatur doloribus 
     // tempore ab cum architecto, numquam voluptatem.
+}
+
+
+
+//Form
+
+let formul = document.forms.myForm;
+console.log(formul);
+
+formul.name.onfocus = function(){
+    formul.name.style.border="2px solid #050035";
+}
+
+formul.mail.onfocus = function(){
+    formul.mail.style.border="2px solid #050035";
+}
+
+formul.message.onfocus = function(){
+    formul.message.style.border="2px solid #050035";
+}
+
+formul.name.onblur = function(){
+    formul.name.style.border="2px solid rgb(156, 218, 247)";
+}
+
+formul.mail.onblur = function(){
+    formul.mail.style.border="2px solid rgb(156, 218, 247)";
+}
+
+formul.message.onblur = function(){
+    formul.message.style.border="2px solid rgb(156, 218, 247)";
 }
