@@ -123,8 +123,8 @@ h2{
     color:#050035;
     border-bottom: solid #050035 5px;
     /* background:#1994f8; */
-    background: rgb(163, 199, 216);
-    background-image: linear-gradient(rgba(255,255,255,0.55),rgba(255,255,255,0.55)), url("../img/sky.jpg"); 
+    /* background: rgb(163, 199, 216); */
+    background-image: linear-gradient(rgba(255,255,255,0.55),rgba(255,255,255,0.55)), url("../img/Sky.jpg"); 
     background-attachment: fixed;
     background-size:cover;
     text-align:center;
