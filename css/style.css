@@ -166,6 +166,7 @@ h2{
     background-image: linear-gradient(rgba(255,255,255,0.35),rgba(255,255,255,0.35)), url("../img/section2.jpg");
     background-attachment: fixed;
     background-size:cover;
+    background-repeat: no-repeat;
     border-bottom: solid #050035 2px;
     color: #050035;
     position:relative;
@@ -193,6 +194,9 @@ h2{
 #section3{
     min-height:96vh;
     background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url("../img/water.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat:no-repeat;
     border-bottom: solid #050035 2px;
     color: #050035;
 }
