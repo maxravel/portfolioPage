@@ -1,5 +1,4 @@
-//Gallery
-
+//*********************************Gallery***********************
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 const slider=document.querySelector('.slider');
@@ -30,7 +29,7 @@ function prevPhoto(e){
 
 
 
-//About
+//**********************************About**************************
 const imgs = document.querySelectorAll('.imgs img');
 
 imgs.forEach(d => d.addEventListener('click', clickImg));
@@ -42,8 +41,13 @@ function clickImg(e){
     });
     e.target.style.opacity=0.4;
     e.target.style.cursor = 'default';
+    console.log(e.target.alt);
     //e.target.classList.toggle('opac');
-    //e.target.innerHTML = '<p class="textImg">Lorem ipsum </p>';
+    // var par = document.createElement("p");
+    // par.appendChild(document.createTextNode('adfasdfasdfadsfa'));
+    // par.style.zIndex='999';
+    // e.target.appendChild(par);
+    // e.target.innerHTML = '<p class="textImg">Lorem ipsum </p>';
     // Voluptas ipsum, sed doloremque excepturi earum temporibus beatae 
     // asperiores assumenda harum illo laboriosam eos pariatur doloribus 
     // tempore ab cum architecto, numquam voluptatem.
@@ -51,10 +55,8 @@ function clickImg(e){
 
 
 
-//Form
-
+//************************************Form***************************
 let formul = document.forms.myForm;
-console.log(formul);
 
 formul.name.onfocus = function(){
     formul.name.style.border="2px solid #050035";
