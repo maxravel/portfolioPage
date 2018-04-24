@@ -100,6 +100,10 @@ h2{
     border:solid #050035 1px;
 }
 
+.banner{
+    z-index:999;
+}
+
 @media only screen and (max-width:500px){
     .imgs img{
         width:200px;

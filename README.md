@@ -1,10 +1,12 @@
 # portfolioPage
 simple portfolio page with mountains  
 
-styling form, submin button; done  
-styling top button; done   
-about section background to 6 pics flexbox wrap;  done  
+- styling form, submin button; done  
+- styling top button; done   
+- about section background to 6 pics flexbox wrap;  done  
+- text after click in about section; done  
+  
 to do: validate form;  
 to do: upradge slider;  
 to do: work on style; 
-to do: work on section about - text after click; 
+to do: upradge about effects; 
