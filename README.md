@@ -9,4 +9,3 @@ simple portfolio page with mountains
 to do: validate form;  
 to do: upradge slider;  
 to do: work on style; 
-to do: upradge about effects; 

@@ -104,10 +104,28 @@ h2{
     z-index:999;
 }
 
+.par{
+    left:16px;
+    width:350px;
+    font-size:20px;
+    position:relative;
+    top: -100px;
+    margin: 0px;
+    padding: 0px;
+    background: rgb(255, 251, 31);
+    color: #050035;
+    visibility: hidden;
+    font-weight:bold;
+}
+
 @media only screen and (max-width:500px){
     .imgs img{
         width:200px;
         height:200px;
+    }
+
+    .par{
+        width:200px;
     }
 }
 
