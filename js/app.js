@@ -1,3 +1,36 @@
+//**********************************About**************************
+const imgs = document.querySelectorAll('.imgs img');
+
+imgs.forEach(d => d.addEventListener('click', clickImg));
+
+function clickImg(e){
+
+    //clicking before clicked img removing past clicked effects
+    if(e.target.parentElement.childNodes[1].style.visibility==="visible"){
+        e.target.parentElement.childNodes[1].style.visibility = "hidden";
+        e.target.style.opacity = 1;
+    }
+
+    //clicking another img removing effects of before click
+    else{
+        imgs.forEach(x => {
+            //removing past click effects
+            x.style.opacity=1; 
+            //x.style.cursor = 'pointer'
+            x.parentElement.childNodes[1].style.visibility = "hidden";
+        });
+        //this click effects
+        e.target.style.opacity=0.4;
+        e.target.style.cursor = 'pointer';
+        e.target.parentElement.childNodes[1].style.visibility="visible";
+    }
+    // Voluptas ipsum, sed doloremque excepturi earum temporibus beatae 
+    // asperiores assumenda harum illo laboriosam eos pariatur doloribus 
+    // tempore ab cum architecto, numquam voluptatem.
+}
+
+
+
 //*********************************Gallery***********************
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
@@ -25,56 +58,6 @@ function prevPhoto(e){
     slide.src = photos[i];
     e.preventDefault();
 
-}
-
-
-
-//**********************************About**************************
-const imgs = document.querySelectorAll('.imgs img');
-
-imgs.forEach(d => d.addEventListener('click', clickImg));
-
-//removing past events effects
-function clickImg(e){
-    imgs.forEach(x => {
-        x.style.opacity=1; 
-        x.style.cursor = 'pointer'
-
-        x.parentElement.childNodes[1].style.visibility = "hidden";
-        
-        //removing all par after clicking another img
-        // if(x.parentElement.childNodes[1] !== undefined){
-        //     x.parentElement.removeChild(x.parentElement.childNodes[1]);
-        // } 
-    });
-    
-    e.target.style.opacity=0.4;
-    e.target.style.cursor = 'pointer';
-    e.target.parentElement.childNodes[1].style.visibility="visible";
-    //par.style.visibility = "visible";
-    
-    //adding img alt value to the par element
-    // let parent = e.target.parentElement;
-    // let par = null;
-    // par = document.createElement("p");
-    // par.appendChild(document.createTextNode(e.target.alt));
-
-    //adding class par (style.css)
-    // par.classList.add("par");
-    
-    // par.style.fontSize="20px";
-    // par.style.position="relative";
-    // par.style.top = "-200px";
-    // par.style.margin = "0px";
-    // par.style.padding = "0px";
-    // par.style.background = "gold";
-    // par.style.color = "#050035";
-
-    // parent.appendChild(par);
-    
-    // Voluptas ipsum, sed doloremque excepturi earum temporibus beatae 
-    // asperiores assumenda harum illo laboriosam eos pariatur doloribus 
-    // tempore ab cum architecto, numquam voluptatem.
 }
 
 
