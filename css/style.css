@@ -196,11 +196,47 @@ h2{
 
 #section2 p{
     margin:150px;
+    margin-bottom:70px;
     font-size:20px;
     color: #050035;
     text-align: center;
     opacity:1;
     font-weight: bold;
+}
+
+#sec2-par1{
+    display:block;
+}
+
+#sec2-par2{
+    display:none;
+}
+
+#sec2-par3{
+    display:none;
+}
+
+#circles{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-bottom:50px;
+}
+.circle{
+    height:15px;
+    width:15px;
+    border-radius: 50%;
+    background-color: rgb(61, 61, 61);
+    margin-right:10px;
+}
+
+#circle1{
+    background-color:white;
+}
+
+.circle:hover{
+    background-color:white;
+    cursor: pointer;
 }
 
 @media only screen and (max-width:700px){

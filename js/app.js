@@ -62,6 +62,43 @@ function prevPhoto(e){
 
 
 
+//************************************OFFER***************************
+const circle1= document.querySelector("#circle1");
+const circle2= document.querySelector("#circle2");
+const circle3= document.querySelector("#circle3");
+
+const sec2par1= document.querySelector("#sec2-par1");
+const sec2par2= document.querySelector("#sec2-par2");
+const sec2par3= document.querySelector("#sec2-par3");
+
+circle1.addEventListener("click", function(){
+    sec2par1.style.display ="block";
+    sec2par2.style.display="none";
+    sec2par3.style.display="none";
+    circle1.style.backgroundColor="white";
+    circle2.style.backgroundColor = "rgb(61, 61, 61)";
+    circle3.style.backgroundColor = "rgb(61, 61, 61)";
+});
+
+circle2.addEventListener("click", function(){
+    sec2par1.style.display ="none";
+    sec2par2.style.display="block";
+    sec2par3.style.display="none";
+    circle1.style.backgroundColor ="rgb(61, 61, 61)";
+    circle2.style.backgroundColor = "white";
+    circle3.style.backgroundColor = "rgb(61, 61, 61)";
+});
+
+circle3.addEventListener("click", function(){
+    sec2par1.style.display ="none";
+    sec2par2.style.display="none";
+    sec2par3.style.display="block";
+    circle1.style.backgroundColor ="rgb(61, 61, 61)";
+    circle2.style.backgroundColor = "rgb(61, 61, 61)";
+    circle3.style.backgroundColor = "white";
+});
+
+
 //************************************Form***************************
 let formul = document.forms.myForm;
 
